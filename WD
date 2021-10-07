@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		header{
+            margin-top: 130px;
+        }
+        header h1{
+        text-transform: uppercase;
+        text-indent: 100px;
+        }
+        #navbar{
+        margin-top: -150px;
+        /*word-spacing: 30px;
+        direction: rtl;
+        font-size: 20px;
+        display: block;*/
+        overflow: hidden;
+        /*margin-left: 500px;*/
+        border-bottom-color: gray;
+        background-color: white;
+        box-sizing: border-box;
+        }
+        #navb:hover{
+            color: blue;
+        }
+        #navb{
+            margin-left: 20px;
+        }
+        #nav{
+            margin-left: 400px;
+            margin-top: -62px;
+        }
+        #navbar a{
+            color: black;
+            display: block;
+            padding: 17px 20px;
+            float: left;
+        }
+        #navbar h1{
+            margin-right: 120px;
+            margin-top: 40px;
+        }
+        .sticky {
+        position: fixed;
+        top: 15;
+        width: 100%;
+        }
+       .sticky + .content {
+        padding-top: 100px;
+        }
+        a:link{
+            text-decoration: none;
+            /*color: black;*/
+        }
+        /*#div1{
+            margin-top: 25px;
+        	margin-left: -70px;
+        	width: 1000px;
+        	height: 500px;
+            border-radius: 30px;
+            transform:skewX(20deg);
+            background-color:#1E90FF;
+            padding-top: 40px;
+            color: white;
+        }*/
+        #sec1{
+        	margin-top:30px;
+        }
+        #div2{
+        	position: absolute;
+        	width: 550px;
+        	height: 450px;
+        	z-index: 1126;
+        	right:5%;
+        	margin-top: -500px;
+        }
+        header a{
+        	text-transform: uppercase;
+        }
+        #p1{
+        	font-size: 50px;
+        	font-family: Arial;
+        }
+
+        #div3{
+        	float: left;
+        	margin-top: 70px;
+        	margin-left: 100px;
+        	width: 500px;
+        	height: 500px;
+        }
+        #div4{
+        	float: right;
+        	width:100 ;
+        	height:600;
+        	width: 40%;
+        	margin-top:100px;
+        	margin-right: 100px; 
+        	/*font-weight: bolder;*/
+        	font-size: 23px;
+        }
+        #div5{
+        	color: white;
+        	transform: skew(30deg);
+        	background-color: #1E90FF;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }
+        #div5:hover{
+        	background-color: blue;
+        }
+        #findout{
+        	color: white;
+        	transform: skew(0deg);
+        	background-color:#E52B50;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        	margin-left: 235px;
+        }
+        #findout:hover{
+        	background-color: blue;
+        }
+        #div6{
+        	float: right;
+        	margin-top: 200px;
+        	margin-right: 150px;
+        	width: 500px;
+        	height: 400px;
+        }
+        #div7{
+        	float: left;
+        	width:100 ;
+        	height:600;
+        	width: 30%;
+        	margin-top:100px;
+        	margin-left: 150px; 
+        	/*font-weight: bolder;*/
+        	font-size: 15px;
+
+        }
+        #icon{        	
+        	width:40px;
+        	height: 40px;
+        	margin-top: 20px;
+        }
+        #iconDiv{
+        	margin-left: 50px;
+        	margin-top: -65px;
+        	width: 75%;
+        }
+        #section3{
+        	width: 1330px;
+        	height: 650px;
+        	background-color: #1E90FF;
+        	margin-top: 1300px;
+        }
+        #box1{
+        	float: left;
+        	background-color: white;
+        	width: 22%;
+        	height: 350px;
+        	border-radius: 10px;
+            margin-top:100px; 
+            margin-left: 180px;  
+            border-style: hidden ;
+            box-sizing: content-box;
+            text-align: center;
+            line-height: 25px;
+        }
+        #imgbox1{
+        	height: 70px;
+        	width: 70px;
+        	background-color: #1E90FF;
+        	margin-top: 20px;
+        	border-radius: 50px;
+        }
+        #imgbox2{
+        	height: 70px;
+        	width: 70px;
+        	background-color: #1E90FF;
+        	margin-top: 20px;
+        	border-radius: 50px;
+        }
+        #imgbox3{
+        	height: 70px;
+        	width: 70px;
+        	background-color: #1E90FF;
+        	margin-top: 20px;
+        	border-radius: 50px;
+        }
+        #linkbox1{
+            color: white;
+        	transform: skew(30deg);
+        	background-color: #1E90FF;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }#linkbox2{
+            color: white;
+        	transform: skew(30deg);
+        	background-color: #1E90FF;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }#linkbox3{
+            color: white;
+        	transform: skew(30deg);
+        	background-color: #1E90FF;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }
+        #box2{
+        	float: left;
+        	background-color: white;
+        	width: 22%;
+            margin-top:100px; 
+            margin-left: 50px;
+            height: 350px;
+            border-style: hidden ;
+            border-radius: 10px;
+            box-sizing: content-box;
+            text-align: center;
+            line-height: 25px;
+        }
+        #box3{
+        	float: left;
+        	background-color: white;
+        	width: 22%;
+            margin-top:100px; 
+            margin-left: 50px;
+            height: 350px;
+            border-style: hidden ;
+            border-radius: 10px;
+            box-sizing: content-box;
+            text-align: center;
+            line-height: 25px;
+        }
+        #sec4 h1{
+        	text-align: center ;
+        	margin-top: 70px;
+        	font-size: 50px;
+        }
+		#multilink:hover{
+			background-color :gray;
+			color: cornflowerblue;
+		}
+        #sec4parg{
+        	text-align: center;
+        	margin-top: -10px;
+        	color: gray;
+        }
+        #sec4div{
+        	margin-left: 100px;
+        	width: 33%;
+        	margin-top: 50px;
+        	line-height: 25px;
+        }
+        #sec4contact{
+        	color: white;
+        	/*transform: skew(30deg);*/
+        	background-color: #1E90FF;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 20px;
+        	padding-right: 20px;
+        }
+        #sec4contact:hover{
+        	background-color: blue;
+        }
+        .Links{
+        	transform: skew(0deg);
+        	background-color: lightgray;
+        	margin-top: -410px;
+        	float: right;
+        	margin-right: 220px;
+        	padding-right: 200px;
+        	padding-top: 10px;
+        	width: 20%;
+        	height: 30px;
+        	text-indent: 10px;
+        	font-weight: bolder;
+        }
+        #section5{
+        	width: 1332px;
+        	height: 550px;
+        	background-color: #1E90FF;
+        	margin-top: -230px;
+        }
+        #divsection5{
+        	padding-top: 30px;
+        	/*margin-left: 450px;*/
+        }
+        #h1section5{
+        	color: white;
+        	font-size: 40px;
+        	padding-top: 65px;
+        	margin-left: 500px;
+        }
+        #h1section5:hover{
+        	color: blue;
+        }
+        #sec5linls{
+        	color: lightgray;
+        	/*margin-left: 500px;*/
+        }
+        #navsec5{
+        	word-spacing: 40px;
+        	padding: 30px;
+        	margin-left: 450px;
+        }
+        #navsec5 :hover{
+        	color: blue;
+        }
+        #section5 input[type=text],input[type=email]{
+        	background-color: darkgray;
+        	border-radius: 10px;
+        	width: 600px;
+        	height: 40px;
+        	text-indent: 10px;
+        	margin-left: 350px;
+        	border :none;
+        }
+        textarea{
+        	width: 600px;
+        	height: 100px;
+        	background: darkgray;
+        	border-radius: 10px;
+        	text-indent: 10px;
+        	margin-left: 350px;
+        }
+        #linksec5{
+        	color: white;
+        	/*transform: skew(0deg);*/
+        	background-color: pink;
+        	border-radius: 30px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+        	padding-left: 50px;
+        	padding-right: 50px;
+        	margin-left: 550px;
+        	border:none;
+        }
+        #linksec5:hover{
+        	background-color: blue;
+        }
+        footer{
+        	background-color: black;
+        	color: white;
+        	width: 100%;
+        	height: 300px;
+        }
+        footer input[type=email]{
+        	border-color: #1E90FF;
+        	text-indent: 15px;
+        	width: 160px;
+        	border-radius: 0px;
+        	height: 26px;
+        	margin-left: 0px;
+        }
+        footer input[type=submit]{
+        	color: white;
+        	background-color: #1E90FF;
+        	border-color: #1E90FF;
+        	text-align: center;
+        	height: 28px;
+        	padding-left: 10px;
+        	margin-left: -5px;
+        	width: 80px;
+        }
+        ul{
+        	list-style : none;
+        	line-height: 25px;
+        }
+        footer a{
+        	color: white;    	
+        }
+        #address1{
+        	padding-top: 90px;
+        	padding-left: 100px;
+
+        }
+        #address2{
+        	padding-top: 10px;
+        	padding-left: 300px;
+        	margin-top: -158px;
+        }
+        #address3{
+        	padding-top: 10px;
+        	padding-left: 500px;
+        	margin-top: -158px;
+        }
+        #address4{
+        	padding-top: 20px;
+        	padding-left: 900px;
+        	margin-top: -150px;
+        }
+        #multilink{
+        	color:black;
+        }
+        .footLink{
+        	padding-left: 40px;
+        }
+        #newsletters{
+        	margin-top: 20px;
+        }
+        #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #01796F;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        }
+        #myBtn:hover {
+        background-color: #555;
+        }
+        #logo1{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 30px; 
+        	margin-left: 565px;
+        }
+        #logo2{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 30px; 
+        }
+        #logo3{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 30px;
+        	background-color: white;
+        }
+        #footerlogo1{
+        	width: 30px;
+        	height: 30px;
+        	border-radius: 30px;
+        	margin-top: 40px;
+        }
+       .header {
+           position: fixed;
+           top: 0;
+           z-index: 1;
+           width: 100%;
+           background-color: #f1f1f1;
+        }
+       .modal {
+           display: none;
+           position: fixed; 
+           padding-top: 150px; 
+           left: 0;
+           top: 0;
+           width: 100%; 
+           height: 100%; 
+           background-color: rgba(0,0,0,0.9);
+        }
+       #modal-content {
+           margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          background-color: white;
+        }
+       #modal-content {  
+           -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+           animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+       @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+        }
+
+       @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+       }
+       .close {
+          position: absolute;
+          top: 20px;
+          right: 35px;
+          color: #f1f1f1;
+         font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+       }
+      .close:hover,.close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+       }
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+          }
+        }
+      #modal-content{
+       background-color: white;
+       margin: auto;
+       width: 22%;
+       height: 350px;
+       border-radius: 10px;
+       padding: 20px;
+}
+.header{
+position: relative;
+}
+.header .cont{
+	position: relative;
+	width: 78%;
+}
+.header .cont {
+	height: 90vh;
+	z-index: 11;
+	position: absolute;
+}
+.home h1{
+	color: white;
+	margin: 20px 0;
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 1.4px;
+	margin-top: 100px;
+	margin-left:160px;
+}
+.home p{
+	color: white;
+	line-height: 30px;
+	font-size: 16px;
+	letter-spacing: 1.4px;
+	margin:30px 0;
+	margin-left: 160px;
+	font-family: cursive;
+}
+b{
+	margin-left: 0px;
+}
+.hadr{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-top: 80px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+footer a:hover{
+	color: blue;
+}
+#banner{
+	width:1000px;
+	height: 500px;
+	border-radius: 30px;
+	/*margin-right: -100px;*/
+}
+#points{
+	padding-top: 500px;
+	padding-left: 635px;
+}
+#point1{
+	width: 300px;
+	height: 300px;
+	font-size: 80px;
+	color: white;
+	cursor: pointer;
+}#point2{
+	width: 300px;
+	height: 300px;
+	font-size: 80px;
+	color: white;
+	cursor: pointer;
+}#point3{
+	width: 300px;
+	height: 300px;
+	font-size: 80px;
+	color: white;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+<!-- <h1 id="artf">art factory</h1> -->
+<div id="navbar">
+	<h1 id="artf">art factory</h1>
+	<div id="nav">
+	<a id="navb" href="#">home</a>
+	<a id="navb" href="#">about</a>
+	<a id="navb" href="#">services</a>
+	<a id="navb" href="#">freqently questions</a>
+	<a id="navb" href="#">blog</a>
+	<a id="navb" href="#">contact us</a>
+	</div>
+</div>
+<!-- <div id="mySidebar" class="sidebar">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">home</a>
+  <a href="#">about</a>
+  <a href="#">services</a>
+  <a href="#">freqently questions</a>
+  <a href="#">blog</a>
+  <a href="#">contact us</a>
+</div>  -->
+
+</header>
+<section id="sec1">
+	<div id="div1">
+ <div class="header">
+	<div class="cont">
+		<div class="home">
+	<h1><em>Art Factory is free<br><b>for YOU</b></em></h1>
+	<P><em>this template is available for 100% free of charge on TemplateMo.<br>download, modify and use this for your business website.</em></P>
+	<em><a id="findout" href="#">FIND OUT MORE</a></em>
+	</div>
+		</div>
+	</div> 
+	<img id="banner" src="banner-bg.png">
+</div>
+<img id="div2" src="slider-icon.png">
+<img id="div3" src="left-image.png">
+</section>
+<section id="div4">
+	<h1>Vivamus sodales nisi id ante molestie venenatis</h1>
+	<p>This template is <a href="#">last updated on 20 August 2019</a> for main menu drop-down arrow and sub menu text color.Duis auctor dolor eu scelerisque vestibulum.Vestibulum lacinia, nisl sit amet tristique codimentum .</p>
+	<p >Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio .Donec non quam euismod, mattis dui a,ultrices nisi</p>
+	<a id="div5" href="#">  Discover More  </a>
+	<img id="div6" src="right-image.png">
+</section><hr>
+
+<section id="div7">
+	<h1>Curabitur aliquam eget tellus id porto</h1>
+	<p>Proin justo sapien, posuere suscipit in, fermenrum mattis elit.Aenean in feugiat purus</p>
+<img id="icon" src="about-icon-01.png"><div id="iconDiv">
+		<h2>Nulla ultricies risus quis risus</h2><p">You can use this website template for commercial or non-commercial purposes.</p>
+	</div>
+<img id="icon" src="about-icon-02.png"><div id="iconDiv" style="line-height: 25px;">
+		<h2>Donec consequat commodo purus</h2><p>You have no right to re-distribute this template as a downloadable ZIP file on any website.</p>
+	</div>
+<img id="icon" src="about-icon-03.png"><div id="iconDiv" style="line-height: 25px;">
+		<h2>Sed placerat sollicitudin mauris</h2><p>If you have any question or comment,please contact us on TemplateMo.</p>
+	</div>
+</section>
+<section id="section3" >
+	<div id="box1">
+<img id="imgbox1" src="service-icon-01.png">
+		<h2>First Box Service</h2>
+		<p style="color: gray;">Aenean vulputate massa sed neque consectetur, ac fringilla quam aliquent. Sed a enim nec tempor cursus at id libero.</p><br>
+		<a id="linkbox1" href="#">READ MORE</a>
+	</div>
+	<div id="box2">
+<img id="imgbox2" src="service-icon-02.png">
+		<h2>Second Box Service</h2>
+		<p style="color: gray;">Pellentesque vitae urna ut nisi viverra tristique quis at dolor. In non sodales dolor, id egestas quam . Aliquam erat volutpat .</p><br>
+		<a id="linkbox2" href="#">DISCOVER MORE</a>
+	</div>
+	<div id="box3">
+        <img id="imgbox3" src="service-icon-03.png">
+		<h2>Third Box Service</h2>
+		<p style="color: gray;">Quisque finibus libero augue, in ultrices quam dictum id. Aliquam quis tellus sit amet urna tincidunt bibendum.</p><br>
+		<a id="linkbox3" href="#">MORE DETAIL</a>
+	</div>
+	<div id="points">
+			<b id="point1">.</b>
+			<b id="point2">.</b>
+			<b id="point3">.</b>
+	</div>
+	<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div id="modal-content"></div>
+</div>
+</section>
+<!-- <div id="main">
+  <button class="openbtn" onclick="openNav()"> Open Sidebar</button>  
+</div>  -->
+<section id="sec4">
+	<h1>Frequently Asked Question</h1>
+	<p id="sec4parg">Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien .<br>Nunc euisrnod risus ac lobortis congue. Sed erat quem .</p>
+	<div id="sec4div">
+		<h2>Class Aptent Taciti Sociosqu Ad Litora 
+	Torquent Per Conubia</h2>
+	<p id="sec4prag">
+		Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum . Nulla ultricies risus quis risus scelerisquam ,a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odia sodales , in facilisis tellus volutpat .
+	</p>
+	<p style="margin-top: 40px;">
+		Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet. 
+	</p>
+	<p style="margin-top: 40px;">Email : <a style="color:#1E90FF;" href="#">email@company.com</a></p>
+	<a id="sec4contact" href="#">Contact Us</a>
+	</div>
+	<div>
+		<nav>
+			<a class="Links"  id="multilink" href="#">First Common Question </a><br><br><br>
+			<a class="Links" id="multilink" href="#">Second Question Answer</a><br><br><br>
+			<a class="Links" id="multilink" href="#">Third Answer for you </a><br><br><br>
+			<a class="Links" id="multilink" href="#">Fourth Question Asked</a><br><br><br>
+			<a class="Links" id="multilink" href="#">Fifth Ever Question</a><br><br><br>
+			<a class="Links" id="multilink" href="#">Sixth Sense Question</a><br><br><br>
+		</nav>
+	</div>
+</section>
+<section id="section5">
+	<div id="divsection5">
+		<h1 id="h1section5">ART FACTORY</h1>
+	<nav id="navsec5">
+		<a id="sec5linls" href="#">Home</a>
+		<a id="sec5linls" href="#">About</a>
+		<a id="sec5linls" href="#">Services</a>
+		<a id="sec5linls" href="#">Contact</a>
+	</nav>
+	<form id="sec5form">
+		<input class="formsec5" type="text" name="uname" placeholder="Name"><br><br>
+		<input class="formsec5" type="email" name="Eemail" placeholder="Email"><br><br>
+		<!-- <textarea class="formsec5" cols="50" rows="5" placeholder="Message"></textarea><br><br> -->
+		<input id="linksec5" type="submit" name="" value="Send"><br><br>
+	</form>
+    <!-- <div>
+	<a href="#" id="facebook"><img id="logo1" src="facebook-logo.jpg"></a>
+	<a href="#" id="instagram"><img id="logo2" src="instagram-logo.jpg"></a>
+	<a href="#" id="twitter"><img id="logo3" src="twitter-logo.png"></a>
+    </div> -->
+	</div>
+</section>
+<footer>
+	<div id="address1">
+		<address class="footLink">Category</address>
+	<ul>
+		<li><a href="#">Male</a></li>
+		<li><a href="#">Female</a></li>
+		<li><a href="#">Fashion</a></li>
+		<li><a href="#">Shoes</a></li>
+	</ul>
+	</div>
+	<div id="address2">
+		<address class="footLink">Company</address>
+	<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	</div>
+	<div id="address3">
+		<address class="footLink">Address</address>
+	<ul>
+		<li><a href="#">200, Green block, NewYork</a></li>
+		<li><a href="#">+10 456 267 1678</a></li>
+		<li><a href="#">Contact89@Winter.Com</a></li>
+	</ul>
+	</div>
+	<div id="address4">
+		<address>Newsletter</address>
+	<form id="newsletters">
+		<input type="email" name="email" placeholder="Email Address" required="" id="eml">
+		<input type="submit" value="subscribe" name="subscribe" id="formBtn">
+	</form>
+	<!-- <div>
+	<a href="#" id="facebook"><img id="footerlogo1" src="facebook-logo.jpg"></a>
+	<a href="#" id="instagram"><img id="logo2" src="instagram-logo.jpg"></a>
+	<a href="#" id="twitter"><img id="logo3" src="twitter-logo.png"></a>
+    </div> -->
+	</div>
+</footer>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- <div class="hadr">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+</div> -->
+</body>
+<script>
+
+
+
+// var mybutton = document.getElementById("myBtn");
+// window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+var modal = document.getElementById("myModal");
+var box1 = document.getElementById("box1");
+var box2 = document.getElementById("box2");
+var box3 = document.getElementById("box3");
+var modalBox = document.getElementById("modal-content");
+box1.onclick = function(){
+  modal.style.display = "block";
+  modalBox.innerHTML = this.innerHTML
+   modalBox.style.backgroundColor = "white";
+}
+box2.onclick = function(){
+  modal.style.display = "block";
+  modalBox.innerHTML = this.innerHTML
+   modalBox.style.backgroundColor = "white";
+}
+box3.onclick = function(){
+  modal.style.display = "block";
+  modalBox.innerHTML = this.innerHTML
+   modalBox.style.backgroundColor = "white";
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+
+
+
+// window.onscroll = function() {MFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function MFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+
+
+function validateForm(){
+		var lowercase =/[a-z]/g;
+		var uppercase =/[A-Z]/g;   
+		var numbers =/[0-9]/;
+		var z =document.forms["sec5form"]["Eemail"].value;
+		if(!(z.match(lowercase) &&
+			z.match(uppercase) &&
+			z.match(numbers) &&
+			z.length >=6)&&
+			z.match('-')){
+			window.alert("Email must contain lowercase letter,uppercase letter,numbers,and minimum 8 characters");
+			return false;
+		}
+	} 
+
+
+
+
+// window.onscroll = function() {myFunction()};
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+
+
+// function openNav() {
+//   document.getElementById("mySidebar").style.width = "250px";
+//   document.getElementById("main").style.marginLeft = "250px";
+// }
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "0";
+//   document.getElementById("main").style.marginLeft= "0";
+// }
+
+
+
+
+// window.onscroll=function(){
+// 	scrollFunction();
+// 	MFunction();
+// 	myFunction()
+// };
+
+
+
+var image1 =document.getElementById("imgbox1");
+var link1 =document.getElementById("linkbox1");
+var p1 =document.getElementById("point1");
+
+var image2 =document.getElementById("imgbox2");
+var link2 =document.getElementById("linkbox2");
+var p2 =document.getElementById("point2");
+
+var image3 =document.getElementById("imgbox3");
+var link3 =document.getElementById("linkbox3");
+var p3 =document.getElementById("point3");
+
+// p1.onclick =function(){
+// 	image1.innerHTML =this.innerHTML;
+// 	link1.innerHTML =this.innerHTML;
+// 	image1.style.backgroundColor ="blue";
+// 	link1.style.backgroundColor ="blue";
+// }
+p1.onmouseup =function(){
+	image1.innerHTML =this.innerHTML;
+	link1.innerHTML ="READ MORE";
+	image1.style.backgroundColor ="#1E90FF";
+	link1.style.backgroundColor ="#1E90FF";
+}
+p1.onmousedown =function(){
+	image1.innerHTML =this.innerHTML;
+	link1.innerHTML ="READ MORE";
+	image1.style.backgroundColor ="blue";
+	link1.style.backgroundColor ="blue";z
+}
+p2.onmouseup =function(){
+	image2.innerHTML =this.innerHTML;
+	link2.innerHTML ="DISCOVER MORE";
+	image2.style.backgroundColor ="#1E90FF";
+	link2.style.backgroundColor ="#1E90FF";
+}
+p2.onmousedown =function(){
+	image2.innerHTML =this.innerHTML;
+	link2.innerHTML ="DISCOVER MORE";
+	image2.style.backgroundColor ="blue";
+	link2.style.backgroundColor ="blue";
+}
+p3.onmouseup =function(){
+	image3.innerHTML =this.innerHTML;
+	link3.innerHTML ="MORE DETAIL";
+	image3.style.backgroundColor ="#1E90FF";
+	link3.style.backgroundColor ="#1E90FF";
+}
+p3.onmousedown =function(){
+	image3.innerHTML =this.innerHTML;
+	link3.innerHTML ="MORE DETAIL";
+	image3.style.backgroundColor ="blue";
+	link3.style.backgroundColor ="blue";
+}
+</script>
+</html>
